@@ -1,0 +1,46 @@
+{
+"Rules":[ 
+    { 
+       "SettingName":"TamperProtection",
+       "Operator":"IsEquals",
+       "DataType":"Boolean",
+       "Operand":true,
+       "MoreInfoUrl":"https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection",
+       "RemediationStrings":[ 
+          { 
+             "Language":"en_US",
+             "Title":"Tamper Protection must be enabled",
+             "Description": "Please refer to the link above"
+          }
+       ]
+    },
+    { 
+       "SettingName":"RealtimeProtection",
+       "Operator":"IsEquals",
+       "DataType":"Boolean",
+       "Operand":true,
+       "MoreInfoUrl":"https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus",
+       "RemediationStrings":[ 
+          { 
+             "Language": "en_US",
+             "Title": "Realtime Protection must be enabled",
+             "Description": "Please refer to the link above"
+          }
+       ]
+    },
+    { 
+       "SettingName":"EDRinBlockMode",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"Normal",
+       "MoreInfoUrl":"https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/edr-in-block-mode",
+       "RemediationStrings":[ 
+          { 
+             "Language": "en_US",
+             "Title": "EDR in Block mode must be enabled",
+             "Description": "Please refer to the link above"
+          }
+       ]
+    }
+ ]
+}
